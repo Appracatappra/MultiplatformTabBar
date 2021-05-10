@@ -7,8 +7,7 @@
 # Define macros
 PROJECT_NAME="MultiplatformTabBar"
 API_OUTPUT="Documentation/API/"
-DEVICE_OS="iphoneos"
-ROOT_URL="http://appracatappra.com/api/actionutilities/ios/"
+ROOT_URL="http://appracatappra.com/api/"
 
 # Make sure the output directory exists
 mkdir -p "${API_OUTPUT}"
@@ -17,7 +16,7 @@ mkdir -p "${API_OUTPUT}"
 #cd "${PROJECT_DIR}"
 
 # Create documentation with Jazzy
-jazzy --output "${API_OUTPUT}" --clean --swift-build-tool spm --build-tool-arguments -Xswiftc,-swift-version,-Xswiftc,5 --module ${PROJECT_NAME} --author "Appracatappra, LLC" --root-url "${ROOT_URL}"
+jazzy --output "${API_OUTPUT}" --clean --swift-build-tool spm --build-tool-arguments -Xswiftc,-swift-version,-Xswiftc,5 --module ${PROJECT_NAME} --author "Appracatappra, LLC" --root-url "${ROOT_URL}" --documentation=Documentation/*.md
 
 # Open project directory
 # open "${API_OUTPUT}"
