@@ -10,7 +10,7 @@ Creates a common **Tab Bar** control that runs and looks the same across multipl
 **Swift Package Manager** (Xcode 11 and above)
 
 1. Select **File** > **Swift Packages** > **Add Package Dependency…** from the **File** menu.
-2. Paste `https://github.com/Appracatappra/SwiftletData.git` in the dialog box.
+2. Paste `https://github.com/Appracatappra/MultiplatformTabBar.git` in the dialog box.
 3. Follow the Xcode's instruction to complete the installation.
 
 > Why not CocoaPods, or Carthage, or blank?
@@ -21,23 +21,27 @@ Since, the **Swift Package Manager** is integrated with Xcode 11 (and greater), 
 
 ## Example
  
- The following example would generate a Tab Bar with three Tabs in SwiftUI:
+ The following example would generate a **Tab Bar** with three **Tabs** in SwiftUI:
  
  ```swift
  MultiplatformTabBar(tabPosition: .top, barHorizontalAlignment: .center)
- .tab(title: "Tab 1", icon: Image(systemName: "tray.fill")) {
+ .tab(title: "Categories", icon: Image(systemName: "tray.fill")) {
      VStack {
-        Text("Body of Tab 1")
+        ...
      }
  }
- .tab(title: "Tab 2", icon: Image(systemName: "tray.fill")) {
+ .tab(title: "Products", icon: Image(systemName: "shippingbox.fill")) {
      VStack {
-        Text("Body of Tab 1")
+        ...
      }
  }
- .tab(title: "Tab 3", icon: Image(systemName: "tray.fill")) {
+ .tab(title: "iCloud", icon: Image(systemName: "icloud.fill")) {
      VStack {
-        Text("Body of Tab 1")
+        ...
      }
  }
  ```
+ 
+ Would produce an **Tab bar** like the following:
+ 
+ ![](Documentation/TabBar01.png)
