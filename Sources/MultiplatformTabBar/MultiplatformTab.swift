@@ -41,7 +41,7 @@ public struct MultiplatformTab: View {
     ///   - icon: The icon for the tab.
     ///   - tag: An optional tag for the tab.
     ///   - contents: The SwiftUI content for the page body displayed when this tab is selected.
-    init(title:String, icon:Image, tag:String = "", contents:AnyView) {
+    public init(title:String, icon:Image, tag:String = "", contents:AnyView) {
         self.title = title
         self.icon = icon
         self.tag = tag

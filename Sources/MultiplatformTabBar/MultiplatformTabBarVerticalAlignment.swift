@@ -10,7 +10,7 @@ import Foundation
 /**
  Defines the Vertical Alignment for a `MultiplatformTabBar`.
  */
-enum MultiplatformTabBarVerticalAlignment {
+public enum MultiplatformTabBarVerticalAlignment {
     /// Aligns to the top.
     case top
     

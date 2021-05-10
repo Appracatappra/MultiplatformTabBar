@@ -56,13 +56,13 @@ public extension Color {
  */
 public struct MultiplatformTabBar: View {
     /// Defines the location of the Tab Bar.
-    var tabPosition:MultiplatformTabViewPosition = .top
+    public var tabPosition:MultiplatformTabViewPosition = .top
     
     /// Defines the vertical alignment of the Tab Bar.
-    var barVerticalAlignment: MultiplatformTabBarVerticalAlignment = .center
+    public var barVerticalAlignment: MultiplatformTabBarVerticalAlignment = .center
     
     /// Defines the horizontal alignment of the Tab Bar.
-    var barHorizontalAlignment: MultiplatformTabBarHorizontalAlignment = .center
+    public var barHorizontalAlignment: MultiplatformTabBarHorizontalAlignment = .center
     
     /// Holds the currently selected tab bar.
     @State private var selection = 0
