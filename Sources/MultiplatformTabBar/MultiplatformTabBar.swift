@@ -55,6 +55,8 @@ public extension Color {
  - Remark: This tool works great for creating a **Settings** page for the macOS build of a multiplatform SwiftUI project.
  */
 public struct MultiplatformTabBar: View {
+    // MARK: - Properties
+    
     /// Defines the location of the Tab Bar.
     public var tabPosition:MultiplatformTabViewPosition = .top
     
@@ -69,6 +71,28 @@ public struct MultiplatformTabBar: View {
     
     /// Holds the collection of tabs being presented.
     @ObservedObject public var tabSet:MultiplatformTabCollection = MultiplatformTabCollection()
+    
+    // MARK: - Initializers
+    
+    /// Creates a new instance of the object.
+    public init() {
+        
+    }
+    
+    
+    /// Creates a new instance of the object with the given properties
+    /// - Parameters:
+    ///   - tabPosition: The Tab Bar position.
+    ///   - barVerticalAlignment: The Tab Bar's vertical alignment.
+    ///   - barHorizontalAlignment: The Tab Bar's horizontal alignment.
+    public init(tabPosition:MultiplatformTabViewPosition = .top, barVerticalAlignment: MultiplatformTabBarVerticalAlignment = .center, barHorizontalAlignment: MultiplatformTabBarHorizontalAlignment = .center) {
+        // Initialize
+        self.tabPosition = tabPosition
+        self.barVerticalAlignment = barVerticalAlignment
+        self.barHorizontalAlignment = barHorizontalAlignment
+    }
+    
+    // MARK: - Functions
     
     /// Generates a horizontal Tab Bar.
     private var barHorizontal: some View {
