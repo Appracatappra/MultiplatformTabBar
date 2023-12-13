@@ -2,12 +2,21 @@
   "object": {
     "pins": [
       {
+        "package": "LogManager",
+        "repositoryURL": "https://github.com/Appracatappra/LogManager",
+        "state": {
+          "branch": null,
+          "revision": "bc21e80add4315c28e9461b8f583cfd79e4c74f8",
+          "version": "1.0.3"
+        }
+      },
+      {
         "package": "SwiftletUtilities",
         "repositoryURL": "https://github.com/Appracatappra/SwiftletUtilities.git",
         "state": {
           "branch": null,
-          "revision": "f50bc2f4b379abb87588436aa0f3101ebf33dd59",
-          "version": "1.0.7"
+          "revision": "bfb3f6a96169bbc6a8d02acfdabd2c0e5de7093f",
+          "version": "1.1.11"
         }
       }
     ]
