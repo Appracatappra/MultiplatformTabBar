@@ -1,0 +1,10 @@
+version: 1
+builder:
+  configs:
+  - platform: ios
+    scheme: MultiplatformTabBar
+  - platform: macos-xcodebuild
+    scheme: MultiplatformTabBar
+  - platform: tvos
+    scheme: MultiplatformTabBar
+ - documentation_targets: [MultiplatformTabBar]
